@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "c2cd86eb-a738-4048-a309-8bc96648a9cd",
+		"name": "AWS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8087/product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/product/d4b2aed3-4de6-4bca-9b66-110014d1095a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"product",
+						"d4b2aed3-4de6-4bca-9b66-110014d1095a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8087/product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test Product\",\r\n    \"description\": \"Test Product\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8087/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
